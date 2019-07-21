@@ -1,0 +1,83 @@
+<div class="jumbotron sincolor text-center">
+    <h1 class="display-4">CURRENCY CONVERTER</h1>
+    <span class="circle rounded-circle"></span>
+    <br>
+    <a class="btn btn-primary btn-lg mr-2 mb-1" role="button">Learn more</a>
+    <a class="btn btn-success btn-lg mr-2 mb-1" role="button">Learn more</a>
+    <a class="btn btn-info btn-lg mr-2 mb-1" role="button">Learn more</a>
+    <a class="btn btn-secondary btn-lg mr-2 mb-1" role="button">Learn more</a>
+</div>
+
+<div class="jumbotron text-center">
+    <form #formCurrency="ngForm" autocomplete="off">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>LU</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">£U</span>
+                    </div>
+                    <input type="number" min="1" class="form-control" name="sterlingInput" #sterlingInput="ngModel" [(ngModel)]="formCurrencyData.sterlingInput">
+                </div>
+            </div>
+
+
+            <div class="form-group col-md-6">
+                <label>USD</label>
+                <!-- <input class="form-control" [(ngModel)]="fg" placeholder="{{rateCurrency | currency : 'USD' : true : '1.4'}}" disabled> -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">USD</span>
+                    </div>
+                    <input required class="form-control" name="usdInput" #usdInput="ngModel" [(ngModel)]="formCurrencyData.usdInput" disabled>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg big-btn" (click)="updateTotal()">Calculate</button>
+    </form>
+</div>
+
+
+<div class="jumbotron text-center mt-2">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Article 1</h5>
+                    <p class="card-text">Lorem Ipsum lorem Ipsum</p>
+                    <a href="#" class="btn btn-primary">Push me</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Article 2</h5>
+                    <p class="card-text">Lorem Ipsum lorem Ipsum</p>
+                    <a href="#" class="btn btn-primary">Push me</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Article 3</h5>
+                    <p class="card-text">Lorem Ipsum lorem Ipsum</p>
+                    <a href="#" class="btn btn-primary">Push me</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Article 4</h5>
+                    <p class="card-text">Lorem Ipsum lorem Ipsum</p>
+                    <a href="#" class="btn btn-primary">Push me</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,20 @@
+● src
++---● app
+|   +--● currency
+|   |  |--currency.component.ts|.html.sass (styles in for this module)
+|   |  |--currency-routing.module.ts
+|   |  |--currency.module.ts
+|   |  +--● services
+|   |  |  |--currency.service.ts
+|   |  +--● models
+|   |     |--currency.model.ts
+|   |     |--currencyForm.model.ts
+|   |  
+|   +--● shared
+|   |  |--user.service.ts
+|   | 
+|   |--app.component.ts|.html.sass
+|   |--app.module.ts
+|   |--app-routing.module.ts (route configs.)
+|
+|--index.html (cdn path for bootstrap)

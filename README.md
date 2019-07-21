@@ -1,2 +1,2 @@
 # fixer-exchange
-Application that consumes API from fixer.io
+Application that consumes API from fixer.io.

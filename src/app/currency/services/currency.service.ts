@@ -19,10 +19,6 @@ export class CurrencyService {
 
   constructor(private http: HttpClient) { }
 
-  // public getUsers(): Observable<Currency[]> {
-  //   return this.http.get<User[]>(this.urlUsers)
-  //   .pipe(catchError(this.handleError));
-
   // getCurrencyBySymbols() {
   //   return this.http.get(this.baseUrl + this.apiKey + '&base=' + this.currBase + ' &symbols=' + this.symbols[0]);
   // }
